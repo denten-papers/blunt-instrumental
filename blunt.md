@@ -63,9 +63,8 @@ part of progress and innovation.[^7] Much can be learned from them. I offer
 here the lessons from some of my own failures. Fundamentally, I have come to
 believe that that the university is a uniquely terrible place to develop "big"
 software. We are much better placed to remain agile: to tinker and to
-experiment. 
-
-I offer the following from an incomplete list as to the reasons why:
+experiment. I offer the following from an incomplete list as to the reasons
+why:
 
 1. Software is easy (cheap and fun) to build relative to the difficulty
 (expense and drudgery) of maintenance. "90% of coding is debugging. The other
@@ -87,11 +86,13 @@ challenge of any new app or web service is acquiring and retaining users, no
 matter how "disruptive" or "innovative" the technology. Just having a useful,
 or even a disruptively paradigm-shifting tool does not guarantee that anyone
 will use it. I have been working with a brilliant French developer on the next
-generation of distributed translation service called *traduwiki.com* for
-several years now. Despite his skills and dedication to the project, the
-website has not gained significant traction among translators or language
-students. No amount of innovative engineering or web design can guarantee
-participation.
+generation of distributed translation service for several years now. Despite
+his skills and dedication to the project, the website has not gained
+significant traction among translators or language students. No amount of
+innovative engineering or web design can guarantee participation. Neither of us
+has the time or the resources needed to implement our vision into practice,
+which would require training, outreach, and support that we cannot provide if
+we hope to keep our day jobs.
 
 3. Tools make us lazy. Tools make us lazy because they obscure methodology. The
 *nltk.cluster* module bundled in Python's *NLTK* library[^9] contains an
@@ -101,7 +102,8 @@ we need to have a way of estimating a number of expected clusters (that's the
 *k* variable). The algorithm produces non-hierarchical results and being
 non-deterministic, the clusters will vary with each iteration. Both the E-M and
 the GAA clusterers, also included in the module, could be better suited for the
-task at hand (in some hypothetical example). These remarks would be impossible
+task at hand. If none of this makes sense to you, it did not to me
+either---until I picked up the These remarks would be impossible
 to glean from the software package itself, without reading the cited
 methodological literature. Even at the Python library level, where code is
 transparent, the methodology remains obscured by the implementation.
