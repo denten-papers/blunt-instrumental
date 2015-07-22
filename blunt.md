@@ -9,9 +9,9 @@ not just to think about things, but to do things. Doing, when done right, can
 expand the scope of our critical activity, it can prepare our students for work
 in the world, and finally, (and this despite the protestations of some) doing
 can enact meaningful change in our universities, our libraries, and our
-communities.[^1] I write, then, being inspired by the work of Matt Ratto
-(Critical Making Lab, University of Toronto), Garnet Hertz (Concept Lab, UC
-Irvine), Jeffrey Schnapp (metaLab, Harvard University), and many others who
+communities.[^1] I write, then, being inspired by the research being done in
+places like the Critical Making Lab at University of Toronto, Concept Lab at UC
+Irvine, metaLab at Harvard, along with many similar research outfits that
 routinely engage with material culture as a matter of scholarly practice.
 Besides talking and writing papers, the students in my courses create models,
 curate exhibitions, file patents, convene conferences, write grant
@@ -32,25 +32,30 @@ But in this essay, I would like to make a pragmatic case against a specific
 mode of tool making, practiced within the digital humanities and beyond, of the
 sort that confuses tools with methods. More perniciously, the kind of tools I
 have in mind prevent or discourage a critical engagement with methodology. To
-be clear: much work needs to be done in the area of improving humanities
+be clear: much work remains to be completed in the area of improving humanities
 infrastructure. The care of instruments that enable research and collaboration
 within our community is not in question here. Rather, I am concerned with tools
-that offer the promise of easy insight. To put the question most acutely, can
-research and tool-making ever be practiced apart from each other, in any field?
-Imagine a telescope that shows a wondrous constellation to a group of
-astronomers who are, however, uncertain about its actual existence. They do not
-know whether the starts they are observing are real or whether they are an
-artifact of the telescope. This, in short, is a tool-wielder's dilemma.
-Contemporary research instrumentation in our field, from natural language
-processing to network analysis, is complex enough to require tool makers whose
-knowledge may outstrip our own. And when it does, we can no longer be certain
-of received observation.
+that offer the promise of easy insight.
+
+To put the question most acutely, I ask: Can research and tool-making ever be
+practiced apart from each other, in any field? Imagine a group of astronomers
+using a telescope that reveals wondrous far-away star constellations. Yet, our
+hypothetical scientists do not know whether the stars that they see are real,
+or whether they are an artifact of the telescope. This, in short, has always
+been a tool-wielder's dilemma. Contemporary research instrumentation in our
+field, from natural language processing to network analysis, is complex enough
+to require tool makers whose knowledge may outstrip our own. And when it does,
+we can no longer be certain of received observation. To resolve that imbalance
+a delicate balance must be achieved between the tool makers and tool users. In
+the best case scenario, the tool maker and the researcher are one and the same.
+In the minimally viable case, the researcher using the tool must understand it
+well enough to know its biases and limitations.
 
 What of tools? The best kind of tools are of our own devising. After spending
 days at wrangling a particularly messy data set, full of inconsistencies and
 extraneous markup, I might write a script that automates clean up. I might then
-release it as a library to help others who face the same problem. With time, I
-I would add a graphical user interface or release my code as a web service.
+release it as a software library to help others who face the same problem. With
+time, I may add a graphical user interface or release my code as a web service.
 These are small acts of kindness that lift all boats. They accelerate the
 research capabilities of the whole community. I would do nothing to discourage
 such altruistic sharing. But let us make sure that in making tools we do not
@@ -94,41 +99,52 @@ has the time or the resources needed to implement our vision into practice,
 which would require training, outreach, and support that we cannot provide if
 we hope to keep our day jobs.
 
-3. Tools make us lazy. Tools make us lazy because they obscure methodology. The
-*nltk.cluster* module bundled in Python's *NLTK* library[^9] contains an
-implementation of something called "k-means clustering."[^10] The algorithm is
-numerical, unsupervised, non-deterministic and iterative.[^11] To use it well
-we need to have a way of estimating a number of expected clusters (that's the
-*k* variable). The algorithm produces non-hierarchical results and being
-non-deterministic, the clusters will vary with each iteration. Both the E-M and
-the GAA clusterers, also included in the module, could be better suited for the
-task at hand. If none of this makes sense to you, it did not to me
-either---until I picked up the These remarks would be impossible
-to glean from the software package itself, without reading the cited
-methodological literature. Even at the Python library level, where code is
-transparent, the methodology remains obscured by the implementation.
-Intellectually, one would be remiss to draw insight from the tool without
-understanding the underlying methodological complexity.
+3. Tools can encourage intellectual laziness by obscuring methodology. That is
+not the tool's fault, but rather a mode of lazy thinking which expects easy
+insight from an automated "black-box" device. For example: the (very useful)
+*nltk.cluster* module bundled in Python's Natural Language Toolkit (NLTK)
+library[^9] contains an implementation of something called "k-means
+clustering," used to discover similar documents in a collection.[^10] The
+algorithm is numerical, unsupervised, non-deterministic and iterative.[^11] To
+use it well we need to have a way of estimating a number of expected clusters
+(that's the *k* variable). The algorithm produces non-hierarchical results and
+being non-deterministic, the clusters will vary with each iteration. Both the
+E-M and the GAA clusterers, also included in the module, could be better suited
+for the task at hand. If none of this makes sense to you, it did not to me
+either---until I opened the black box. That involved reading the library's
+documentation, stepping through the code, and learning more about the
+underlying algorithms (found in *Foundations of Statistical Natural Language
+Processing* by Christopher D. Manning and Hinrich Schütze). NLTK facilitates
+such discovery through meticulous documentation (published at nltk.org), by
+which it is possible to view the logic, notes, assumptions, and citation for
+each of the implemented algorithms. One would be remiss to draw insight from
+the tool without understanding the methodological complexity involved.
 
-Despite being incredibly useful for research, software analytical packages like
-*Gephi*, *Sci2*, or *Paper Machines*  further obscure the methodology, wrapping
-the language-specific implementation of the algorithm in a layer of
-application-specific idiosyncrasies. Without deep understanding of the
-underlying methods, one can never be sure whether the observed results are real
-(in some sense of the word) or merely unintended artifacts of the nested
-implementation. Black-box technology used in such a way cannot withstand
-critical scrutiny.
+In our example, NLTK (a Python library)  can be viewed as a "wrapper" around a
+set of specific statistical methods and algorithms. This already poses a number
+of problems for research. Higher level natural language implementations further
+wrap the underlying Python logic, with all its idiosyncrasies and complexity,
+into a user-friendly graphical user interface application or a web service, for
+example, which makes word clouds or clusters documents with a click of a
+button. Such applications appeal to a more general public by stripping or
+hiding the underlying complexity. They are accessible to researchers who lack
+training in computer science or statistics. It is at this point that we are in
+danger of being like those hapless astronomers who receive wondrous pictures
+from a broken telescope. Like real astronomers, we must have an intimate
+knowledge of our tools. Otherwise, without a deep understanding of the
+underlying methods, we can never be sure about the biases implicit in the
+observed results.
 
 4. Out-of-the-box tools are easy to learn and use, but they are a bad
-investment of time in the long term. Methodologies improve over time.  Tools
+investment of time in the long term. Methodologies improve over time. Tools
 proliferate and decline in quality relative to the researcher's experience.
 Reviewing the academic literature on k-means clustering at its lowest "raw"
 level initially could be a tedious and labor-intensive affair. Not being a
 statistician, I cannot always follow the math. But, in looking at a number of
 articles in several related fields I am able to understand the uses and the
 limitations of the algorithm. This knowledge is independent of implementation.
-If tomorrow's research community moves from Python to Haskell (for example), the
-applied methods will transfer with the language.
+If tomorrow's research community moves from Python to Haskell (for example),
+the applied methods will transfer with the language.
 
 Learning the methodology properly is initially expensive, but is, ultimately, a
 more lasting and more portable investment of time. Learning to code is not for
@@ -184,9 +200,9 @@ more room in our debates and publications.
 
 DH cannot survive alone, in isolation from similar movements in other fields.
 The concern with data processing and computation, the availability of large
-datasets, and cheap processing power have brought a number of disciplines
-closer to each other, in a way that elicits much intellectual excitement. But
-to actually make fireworks together, we need to operate the same incendiary
+datasets and cheap processing power have brought a number of disciplines closer
+to each other, in a way that elicits much intellectual excitement. But to
+actually make fireworks together, we need to operate the same incendiary
 equipment. That is to say that finding strings within the human genome could
 have some interesting applications to mining the *Gutenberg Project* and the
 other way around. Biologists, linguists, economists, and sociologists
