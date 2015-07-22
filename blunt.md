@@ -1,5 +1,5 @@
 ---
-title: "Blunt Instrumentalism"
+title: "Blunt Instrumentalism: On Tools and methods"
 author: Dennis Tenen
 
 ---
@@ -28,36 +28,44 @@ humanities: a set of tools and methods that can extend and supplement the
 traditional research activities of a historian, a literary scholar, or a
 philosopher.
 
-But in this essay, I would like to temper some of the enthusiasm behind blunt
-instrumentalism (of a certain kind) in the DH community, this with the hopes of
-focusing our efforts and to mitigate a measure of criticism directed against
-the discipline.[^4] I make a case here against the prevalent and often
-fetishized concern with making tools: software, apps, and web services. A
-related thesis, but one that is more difficult to articulate succinctly, is
-aimed at the confusion between tools and methods---a confusion both subtle and
-pervasive in the practices of the emerging humanities.
+But in this essay, I would like to make a pragmatic case against a specific
+mode of tool making, practiced within the digital humanities and beyond, of the
+sort that confuses tools with methods. More perniciously, the kind of tools I
+have in mind prevent or discourage a critical engagement with methodology. To
+be clear: much work needs to be done in the area of improving humanities
+infrastructure. The care of instruments that enable research and collaboration
+within our community is not in question here. Rather, I am concerned with tools
+that offer the promise of easy insight. To put the question most acutely, can
+research and tool-making ever be practiced apart from each other, in any field?
+Imagine a telescope that shows a wondrous constellation to a group of
+astronomers who are, however, uncertain about its actual existence. They do not
+know whether the starts they are observing are real or whether they are an
+artifact of the telescope. This, in short, is a tool-wielder's dilemma.
+Contemporary research instrumentation in our field, from natural language
+processing to network analysis, is complex enough to require tool makers whose
+knowledge may outstrip our own. And when it does, we can no longer be certain
+of received observation.
 
-I will take it as a matter of shared knowledge and intuition that the first
-wave of DH was defined, to a large extent, by tools and tool making.[^5] A
-cursory look at the list of recent NEH Digital Humanities Start-Up grantees
-shows that the majority of the funded projects involve a tool-making
-component.[^6] Serving as an interface (literally) between the discipline and
-the public, tools have the allure bringing the humanities out of the ivory
-tower and into the world, moving from the merely theoretical to the applied,
-the creative, and the agile. For those frustrated with the solipsistic excesses
-of high theory, with its contentious distinctions and large personalities,
-tool-making offered an activity that is collaborative, inclusive, and
-interdisciplinary, not by words alone but also in action.
+What of tools? The best kind of tools are of our own devising. After spending
+days at wrangling a particularly messy data set, full of inconsistencies and
+extraneous markup, I might write a script that automates clean up. I might then
+release it as a library to help others who face the same problem. With time, I
+I would add a graphical user interface or release my code as a web service.
+These are small acts of kindness that lift all boats. They accelerate the
+research capabilities of the whole community. I would do nothing to discourage
+such altruistic sharing. But let us make sure that in making tools we do not
+forget the lessons of numerous forgotten projects, of the sort that did not
+find an audience or make an impact. And let us ask, why? For every line of code
+running Pandoc, NLTK, and Zotero there are thousands of abandoned lines, which
+nevertheless represents hard work and aspiration by many talented individuals.
+Even in failure (by conventional standards) these projects are an important
+part of progress and innovation.[^7] Much can be learned from them. I offer
+here the lessons from some of my own failures. Fundamentally, I have come to
+believe that that the university is a uniquely terrible place to develop "big"
+software. We are much better placed to remain agile: to tinker and to
+experiment. 
 
-But the warm glow of several bright success stories which illuminates the
-pragmatics of the struggle for ever-diminishing resources can also obscure a
-field littered with the corpses of abandonware. For every Zotero there are
-dozens of obscure projects, representing hundreds of hours spent writing grants
-and developing software. Even in failure (by conventional standards) these
-projects are an important part of progress and innovation.[^7] Much can be
-learned from them. One of the most important lessons for me is that the
-university is a uniquely terrible place to develop software. I offer the
-following from an incomplete list as to the reasons why:
+I offer the following from an incomplete list as to the reasons why:
 
 1. Software is easy (cheap and fun) to build relative to the difficulty
 (expense and drudgery) of maintenance. "90% of coding is debugging. The other
@@ -205,11 +213,10 @@ when doing science.
     Historical Practice.” *Canadian Journal of Communication* 37, no. 1
     (2012): 121–128.
 
-[^4]: For our favorite (and most persistent) interlocutor see Fish,
-    Stanley. “Mind Your P’s and B’s: The Digital Humanities and
-    Interpretation.” *The New York Times Opinionator*. Accessed December
-    14, 2012.
-    http://opinionator.blogs.nytimes.com/2012/01/23/mind-your-ps-and-bs-the-digital-humanities-and-interpretation/.
+[^4]: See, for example, Fish, Stanley. “Mind Your P’s and B’s: The Digital
+Humanities and Interpretation.” *The New York Times Opinionator*. Accessed
+December 14, 2012.
+http://opinionator.blogs.nytimes.com/2012/01/23/mind-your-ps-and-bs-the-digital-humanities-and-interpretation/.
 
 [^5]: See Unsworth, John. “Scholarly Primitives: What Methods Do
     Humanities Researchers Have in Common, and How Might Our Tools
