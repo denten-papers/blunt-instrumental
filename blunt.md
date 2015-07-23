@@ -10,74 +10,66 @@ expand the scope of our critical activity, it can prepare our students for work
 in the world, and finally, (and this despite the protestations of some) doing
 can enact meaningful change in our universities, our libraries, and our
 communities.[^1] I write, then, being inspired by the research being done in
-places like the Critical Making Lab at University of Toronto, Concept Lab at UC
-Irvine, and metaLab at Harvard, along with many similar research outfits that
-routinely engage with material culture as a matter of scholarly practice.
-Besides talking and writing papers, the students in my courses create models,
-curate exhibitions, file patents, convene conferences, write grant
-applications, send letters to the senate, draw, build, and code.
+incitations like the Critical Making Lab at University of Toronto, Concept Lab
+at UC Irvine, and metaLab at Harvard, along with many similar research outfits
+that routinely engage with material culture as a matter of scholarly practice.
+Besides reading, discussing, and writing papers, students enrolled in my
+courses create models, curate exhibitions, file patents, convene conferences,
+write grant applications, send letters to the senate, draw, build, and code.
 
 Understood in the context of the university at large, the digital humanities
-(DH) can be seen as part of the "computational turn" altering the course of all
-major disciplines: see computational biology, computational linguistics,
+(DH) are a part of the "computational turn" altering the course of all major
+disciplines: see computational biology, computational linguistics,
 computational social science, computational chemistry, and so on.  In general
 agreement with Geoffrey Rockwell, Stephen Ramsey,[^2] and William J.
-Turkel[^3] among others, I believe that programming can offer new and promising
+Turkel[^3] among others, I believe that programming offers new and promising
 avenues for the advancement of the humanities: a set of tools and methods that
-can supplement the traditional research activities of a historian, a literary
-scholar, or a philosopher. DH cannot be reduced to computation. But to the
-extent that we use computational tools and methodologies, we must speak the
-language common to all computationally-inflected fields. That is not to argue
-for exclusion or elitism. My point is rather to acknowledge the difficulty
-required for coding fluently: from general digital literacy to literacy in
-statistics.
-
-In this essay, I would like to make a pragmatic case against a specific mode of
-tool making, practiced within the digital humanities and beyond, of the sort
-that confuses tools with methods. More perniciously, the kind of tools I have
-in mind prevent or tacitly discourage a critical engagement with methodology,
-so sorely needed for the field's advancement. To be clear: much work remains to
-be done in the area of improving humanities infrastructure. The care of sites
-and archives that facilitate collaboration within our community is not in
-question here. Rather, I am concerned with research tools that offer the
-promise of easy insight.
+supplements the traditional research activities of a historian, a literary
+scholar, or a philosopher.[^ln-dh] But, in this essay, I would like to bring
+into question a specific mode of tool making, practiced within the digital
+humanities and beyond, of the sort that confuses tools with methods.  More
+perniciously, the kind of tools I have in mind prevent or tacitly discourage
+critical engagement with methodology. To be clear: much work remains to be done
+in the area of improving humanities infrastructure. The care of sites and
+archives that facilitate collaboration within our community is not in question
+here. Rather, I am concerned with research tools that offer the promise of easy
+insight.
 
 To put the question most acutely, I ask: Can research and tool-making ever be
 practiced apart from each other, in any field? Imagine a group of astronomers
 using a telescope that reveals wondrous far-away star constellations. Yet, our
 hypothetical scientists do not know if these stars are real, or whether they
 are an artifact of the telescope. This, in short, has always been a
-tool-wielder's dilemma. Contemporary research instrumentation in our field
-(just like in many others), from natural language processing to network
-analysis, involves complex mechanisms, the inner workings of which may lie
-beyond our full comprehension. And as soon as the tool becomes a black box, we
-can no longer be certain of received insight. To use our tools well, we must,
-in some real sense, know them better than the tool makers. At the very least,
-the researcher using a tool must understand it well enough to know its biases
-and limitations.
+tool-wielder's dilemma. Contemporary research instrumentation in our field,
+from natural language processing to network analysis, involves complex
+mechanisms, the inner workings of which may lie beyond our full comprehension.
+As soon as the tool becomes a black box, we can no longer be certain of
+received insight. To use tools well, we must, in some real sense, know them
+better than the tool makers. At the very least, the researcher using a tool
+should understand it well enough to know its biases and limitations.
 
 The best kind of tools are of our own devising. After spending days at
 wrangling a particularly messy corpus, I might write a script that automates
-data wrangling. It may strip extraneous HTML code, for example. I might then
+data wrangling. It may strip extraneous HTML code, for example. I could then
 release it as a software library to help others who face the same task. With
-time, I may add a graphical user interface or release my code as a web service.
-These are small acts of kindness that lift all boats. They accelerate the
-research capabilities of the whole community. I would do nothing to discourage
-such altruistic sharing. But let us make sure that in using such tools we do
-not forget to master them from inside out. What if my tool accidentally strips
-important metadata or worse yet, what if it alters the primary sources in an
-unexpected and biased ways?
+time, I may add a graphical user interface or build a web service. Such small
+acts of kindness lift all boats. They accelerate the research capabilities of
+the field as a whole. I would do nothing to discourage such altruistic sharing.
+But let us make sure that in using such tools we do not forget to master them
+from inside out. What if my tool implicitly mangles important metadata or worse
+yet, what if it alters the primary sources in an unexpected and tendentious
+ways?
 
 As tool makers, let us also not forget the lessons of numerous forgotten
 projects, of the sort that did not find an audience or failed to make an
-impact. And let us ask, why? For every line of code running Pandoc, NLTK, and
-Zotero there are thousands of abandoned lines, which nevertheless represent the
-hard work and aspiration of many talented individuals. Even in failure (by
+impact. And let us ask again, Why? For every line of code running Pandoc, NLTK,
+and Zotero there are thousands of abandoned lines, which nevertheless represent
+the hard work and aspiration of many talented individuals. Even in failure (by
 conventional standards) these projects can teach us something about the way we
 work.[^7] Much can be learned from them, but only if we take the time to
 carefully analyze our mistakes. I present here the lessons I took from some of
-my own failures. Fundamentally, I have come to believe that that the university
-is a uniquely terrible place to develop "big" software. We are much better
+my own failed projects. Fundamentally, I have come to believe that that the
+university is an unfit place to develop "big" software. We are much better
 placed to remain agile: to tinker and to experiment. I offer the following from
 an incomplete list as to the reasons why:
 
@@ -101,79 +93,66 @@ maintenance.
 initial excitement of a product launch, the challenge of any new app or web
 service is acquiring and retaining users, no matter how "disruptive" or
 "innovative" the technology. Just having a useful tool does not mean that
-anyone will use it. I have been working with a brilliant French developer on
-the next generation of distributed translation service for several years now.
+anyone will use it. I have been working with a talented French developer on the
+next generation of distributed translation service for several years now.
 Despite his skills and dedication to the project, the website has not gained
 significant traction among translators or language students. No amount of
-innovative engineering or web design can guarantee participation. Neither of us
+innovative engineering or web design guarantees participation. Neither of us
 has the time or the resources needed to implement our vision into practice,
 which would require training, outreach, and support that we cannot provide if
 we hope to keep our day jobs.
 
-3. Tools can encourage intellectual laziness by obscuring methodology. That is
-not the tool's fault, but rather a mode of lazy thinking which expects easy
-insight from an automated "black-box" device. For example: the (very useful)
-*nltk.cluster* module bundled in Python's Natural Language Toolkit (NLTK)
-library[^9] contains an implementation of something called "k-means
-clustering," used to discover similar documents in a collection.[^10] The
-algorithm is numerical, unsupervised, non-deterministic and iterative.[^11] To
-use it well we need to have a way of estimating a number of expected clusters
-(that's the *k* variable). The algorithm produces non-hierarchical results and
-being non-deterministic, the clusters will vary with each iteration. Both the
-E-M and the GAA clusterers, also included in the module, could be better suited
-for the task at hand. But how will you decide which? If none of this makes
-sense to you, it did not to me either. Opening the black box involved reading
-the library's documentation, stepping through the code, and learning more about
-the underlying algorithms (found in *Foundations of Statistical Natural
-Language Processing* by Christopher D. Manning and Hinrich Schütze). NLTK
-facilitates such discovery through meticulous documentation (published at
-nltk.org), by which it is possible to view the logic, notes, assumptions, and
-citations associated with each of the implemented algorithms. One would be
-remiss to draw insight from the tool without understanding the methodological
-complexity involved.
+3. Some tools encourage intellectual laziness by obscuring methodology. More
+often, it is not the tool but rather a mode of lazy thinking at fault. For
+example: the (very useful) *nltk.cluster* module bundled in Python's Natural
+Language Toolkit (NLTK) framework[^9] contains an implementation of something
+called "k-means clustering," used to discover similar documents in a
+collection.[^10] The algorithm is numerical, unsupervised, non-deterministic
+and iterative.[^11] To use it well we need to have a way of estimating a number
+of expected clusters (that's the *k* variable). The algorithm produces
+non-hierarchical results and being non-deterministic, the clusters will vary
+with each iteration. Both the E-M and the GAA clusterers, also included in the
+module, could be better suited for the task at hand. But how to decide which?
+If none of this makes sense to you, it did not to me either. Getting to the
+reasoning behind the tool involved reading the framework documentation,
+stepping through the code, and learning more about the underlying algorithms
+(found in *Foundations of Statistical Natural Language Processing* by
+Christopher D. Manning and Hinrich Schütze). NLTK facilitates such discovery
+through meticulous notes (published at nltk.org). These encourage the user to
+explore and one would be remiss to draw insight from the tool without
+understanding the methodological complexity involved.
 
 I take at least two lessons form NLTK. First about empowered use. I was able to
-make use of NLTK in a matter of days. But it took me months to understand the
-logic beneath (and I am still learning). The second is about documentation.
-NLTK is particularly good at revealing its logic. The code base is accessible,
-for one. It is clean and well documented. And it contains links to the related
-research. Throughout, steps were taken to expose encoded assumptions and
-methodology. The effort that went into documentation must have comprised the
-larger part of the overall effort. The NLTK GitHub page lists no fewer than 130
-contributors. Few projects in our field gain similar levels of participation.
-Again I must ask, Why? And, How can we do better?
+start experimenting with NLTK in a matter of days. But it took me months to
+understand the logic beneath, and I am still learning. The second is about
+documentation. NLTK is particularly good at revealing its methods. The code
+base is accessible, for one. It is clean and well documented. And it contains
+many links to the related research. Throughout, steps were taken to expose the
+encoded assumptions. Immense care clearly went into the writing of
+documentation. And I suspect that at this late stage of the project's life
+cycle, more overall hours were spent on the writing of documentation than on on
+writing code. The NLTK GitHub page lists no fewer than 130 contributors to the
+effort.
 
-Note that in our example, NLTK "wraps" around a set of statistical approaches
-(models and methods) to the study of natural language. This already poses a
-number of problems for research. To use NLTK responsibly requires some
-statistical literacy along with the ability to examine the implemented code.
-Yet higher level encapsulations of NLTK (like a web-based topic modeler, for
-example) further remove the user from the logic. Each layer of abstraction
-introduces its own set of assumptions, complexity, and idiosyncrasy. The web
-application may look easy to use. Yet, the ease is achieved by hiding
-complexity, and by adding yet another layer of interpretation, in what already
-looks like a set of nesting dolls. It is at this point that we are in danger of
-being like those hapless astronomers who receive wondrous pictures from a
-broken telescope. Like real astronomers, we must have an intimate knowledge of
-our tools. We can never be sure about the biases implicit in the observed
-results otherwise. To be sure, it is not that I advocate against graphical user
-interfaces. However, whatever insight can be gained from our hypothetical NLTK
-application or platform, emanates from that inner-most logic container. Every
-shortcut that attempts to bypass it, only adds extra complexity.
+Note that in our example, NLTK itself is a wrapper around a set of statistical
+approaches (models and methods) to the study of natural language. That step of
+encapsulation already poses a number of problems for research. To use NLTK
+responsibly requires some statistical literacy along with the ability to
+examine the implemented code. Yet higher level encapsulations of NLTK (like a
+web-based topic modeler, for example) would further remove the user from the
+logic. Each layer of abstraction introduces its own set of assumptions,
+compromises, and complexity. The resulting (hypothetical) web application may
+look easy to use. Yet, paradoxically, the ease would be gained at the expense
+of added (and hidden) complexity.
 
-+----------------------------+
-|              GUI wrapper   |
-| +-------------------------+|
-| |           Python NLTK   ||
-| | +----------------------+||
-| | |           NLP logic  |||
-| | |                      |||
-| | |                      |||
-| | |                      |||
-| | |                      |||
-| | +----------------------+||
-| +-------------------------+|
-+----------------------------+
+Hidden complexity puts us in danger of resembling those hapless astronomers who
+receive wondrous pictures from broken telescopes. To avoid falling into such a
+trap, in the way of actual astronomers, we would have to disassemble the
+device, gaining access to those inner-most meaning-making mechanisms. There is
+no other logical way to make the tool simpler. Any attempt to repackage it only
+adds another, thin layer of obfuscation.
+
+![Layers of encapsulation.](encapsulation.png)
 
 4. Out-of-the-box tools are easy to learn and use, but they are a poor
 investment of time in the long run. Methodologies improve over time. Tools
@@ -184,28 +163,23 @@ Not being a statistician, I cannot always follow the math. But, in looking at a
 number of articles in several related fields I am able to understand the uses
 and the limitations of the algorithm. This knowledge is independent of
 implementation. If tomorrow's researchers move from Python to Haskell (for
-example), the applied methods will transfer with the language.
+example), the applied methods will transfer with the language. Thus: learn the
+method not the implementation.
 
-Learning the methodology properly is initially expensive, but is, ultimately, a
-more lasting and a more portable investment. Speaking R or Python enables us to
-reach to a wide audience, to share methods, to receive support from and to
-share findings with a diverse community of practitioners. It is perhaps time to
-start investing resources not in more tools that attempt to diminish the pain
-of deep digital literacy, but into training and methodologies. Instead of a
-proliferation of tools, I would like to see our community congeal around a
-methods and core competencies.
+Getting to the methodological layer of the tool can be initially expensive, but
+ultimately, it makes for a more lasting and a more portable investment of time.
+Gaining fluency in widely-adopted languages, like R or Python, enables us to
+reach a wider audience: to share expertise, to seek and to offer support, and
+to share findings with a diverse community of practitioners. But to get to that
+level, we cannot underestimate the effort required to attain deep digital
+literacy. Tools that hide complexity divert resources away from the attainment
+of core competencies necessary for computational research. Without attention to
+methodology, we are bound to remain mere consumers of methods developed
+elsewhere.
 
-That does not mean that we will stop building tools. It just means that we need
-to first look to sustainable models of software development. It means taking
-seriously the "data management plan" part of that grant---a plan which could
-include spin-offs, start-ups, non-profits, and other unconventional (for the
-humanities) modes of scholarly production. These could expand the experimental
-and exploratory activities of a lab beyond the university's limited (and
-already overburdened) administrative structures.
-
-Furthermore, the emphasis of innovation should be on nurturing communities
-rather on building tools. Hacking stuff is good, but better yet we need to hack
-our cultures and our institutions. A new publishing platform, for example, does
+The emphasis of innovation should be on nurturing communities rather on
+building tools. Hacking stuff is good, but better yet we need to hack our
+cultures and our institutions. A new publishing platform, for example, does
 little to solve the problems with the current publishing regime. The difficulty
 lies in convincing our peers to read and to write differently. It is in the way
 we cite, in our program requirements, and in the way train faculty, students,
@@ -221,7 +195,7 @@ knowledge-making (the encyclopedia) and innovative editorial structures
 (commons-based peer production).[^13] I am therefore inspired by *Wikipedia*
 the community, not *MediaWiki* the tool.
 
-Finally, the emphasis on community-building leads us to standards and best
+The emphasis on community-building leads us to standards and best
 practices. Rather than tools, we need initiatives that promote methodological
 and not just instrumental innovation: humanities-based alternatives to
 associations like the *Society for Political Methodology and the International
@@ -322,3 +296,5 @@ http://opinionator.blogs.nytimes.com/2012/01/23/mind-your-ps-and-bs-the-digital-
     http://www.niemanlab.org/2011/10/the-contribution-conundrum-why-did-wikipedia-succeed-while-other-encyclopedias-failed/.
 
 [^14]: Witness the communities aroudn arxiv.org and PLOS ONE.
+
+[^ln-dh]: I do not mean to imply that DH can be *reduced* to computation.
