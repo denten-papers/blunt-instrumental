@@ -333,5 +333,3 @@ http://opinionator.blogs.nytimes.com/2012/01/23/mind-your-ps-and-bs-the-digital-
 [^14]: Witness the communities aroudn arxiv.org and PLOS ONE.
 
 [^ln-dh]: I do not mean to imply that DH can be *reduced* to computation.
-
-[ln2-kathleen]:
