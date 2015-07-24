@@ -21,19 +21,18 @@ Understood in the context of the university at large, the digital humanities
 (DH) are a part of the "computational turn" altering the course of all major
 disciplines: see computational biology, computational linguistics,
 computational social science, computational chemistry, and so on.  In general
-agreement with Geoffrey Rockwell, Stephen Ramsey,[^2] and William J.
-Turkel[^3] among others, I believe that programming offers new and promising
-avenues for the advancement of the humanities: tools and methods that
-supplement the traditional research activities of a historian, a literary
-scholar, or a philosopher.[^ln-dh] But, in this essay, I would like to bring
-into question a specific mode of tool making, practiced within the digital
-humanities and beyond, of the sort that confuses tools with methods. More
-perniciously, the kind of tools I have in mind prevent or tacitly discourage
-critical engagement with methodology. To be clear: much work remains to be done
-in the area of improving humanities infrastructure. The care of sites and
-archives that facilitate collaboration within our community is not in question
-here. Rather, I am concerned with research tools that offer the promise of easy
-insight.
+agreement with Geoffrey Rockwell, Stephen Ramsey, and William J.  Turkel among
+others, I believe that programming offers new and promising avenues for the
+advancement of the humanities: tools and methods that supplement the
+traditional research activities of a historian, a literary scholar, or a
+philosopher.[^ln-dh] But, in this essay, I would like to bring into question a
+specific mode of tool making, practiced within the digital humanities and
+beyond, of the sort that confuses tools with methods. More perniciously, the
+kind of tools I have in mind prevent or tacitly discourage critical engagement
+with methodology. To be clear: much work remains to be done in the area of
+improving humanities infrastructure. The care of sites and archives that
+facilitate collaboration within our community is not in question here. Rather,
+I am concerned with research tools that offer the promise of easy insight.
 
 To put the question into a more acute form, I ask: Can research and tool-making
 ever be practiced apart from each other, in any field? Imagine a group of
@@ -90,9 +89,6 @@ recently. Getting to the reasoning behind the tool involved reading the
 framework documentation, stepping through the code, and learning about the
 algorithms involved.[^ln-stat] NLTK facilitates such discovery through
 meticulous notes, code comments, and accompanying manuals.
-
-[^ln-stat]: found in *Foundations of Statistical Natural Language
-Processing* by Christopher D. Manning and Hinrich Schütze.
 
 I took at least two lessons from exploring NLTK: first, about empowered use.
 Although I was able to start experimenting with the framework in a matter of
@@ -209,14 +205,6 @@ and librarians. The tool comprises but a small part of a much larger ecosystem.
 It can be a wedge that initiates change, but not without a much larger communal
 enterprise, which would also include training, support, and outreach.
 
-[^ln-moby]: If you are behind one of these machines now, search for your
-terminal application using Spotlight and type `man wc` in the prompt (`q` to
-exit). For mere examples see:
-https://github.com/xpmethod/dhnotes/blob/master/command-line/109-text.md
-
-[^ln-kat]: I have in mind the sort of problems Kathleen Fitzpatrick outlines in
-*Planned Obsolescence*.
-
 The effort to shift the habitus of a community involves a delicate balance
 between disruption and continuance. Much can be learned from the success of the
 open source and free culture movements in this regard.[^12] Take for example
@@ -262,74 +250,48 @@ digital humanist or a new media scholar means taking on extra responsibilities:
 to do well by history when writing history, to make things that last when
 making things, and to do good science when doing science.
 
-[^1]: See: Fish, Stanley. *Save the World on Your Own Time*. Oxford
-    University Press, USA, 2008.
+## Notes
 
-[^2]: Ramsay, Stephen, and Geoffrey Rockwell. “Developing Things: Notes
-    toward an Epistemology of Building in the Digital Humanities.” In
-    *Debates in the Digital Humanities*, ed. Matthew Gold. Minneapolis:
-    Univ Of Minnesota Press, 2012.
+[^1]: See @fish_save_2008
 
-[^3]: See for example: Elliott, D, R MacDougall, and W.J Turkel. “New
-    Old Things: Fabrication, Physical Computing, and Experiment in
-    Historical Practice.” *Canadian Journal of Communication* 37, no. 1
-    (2012): 121–128.
-
-[^4]: See, for example, Fish, Stanley. “Mind Your P’s and B’s: The Digital
-Humanities and Interpretation.” *The New York Times Opinionator*. Accessed
-December 14, 2012.
-http://opinionator.blogs.nytimes.com/2012/01/23/mind-your-ps-and-bs-the-digital-humanities-and-interpretation/.
-
-[^5]: See Unsworth, John. “Scholarly Primitives: What Methods Do
-    Humanities Researchers Have in Common, and How Might Our Tools
-    Reflect This?” King’s College, London, 2000 as part of part of a
-    symposium on Humanities Computing: Formal Methods, Experimental
-    Practice.
-    http://people.lis.illinois.edu/\~unsworth//Kings.5-00/primitives.html.
-
-[^6]: http://www.neh.gov/divisions/odh/grant-news/videos-2012-digital-humanities-start-grantees
-
-[^7]: William Pannapacker has written eloquently on the topic in the
-    Chronicle of Higher Education. See “Pannapacker From MLA: The
-    Success of ‘Failure’” *The Chronicle of Higher Education*. From the
-    Archives: Brainstorm, January 7, 2011.
-    http://chronicle.com/blogs/brainstorm/pannapacker-from-mla-failure-is-the-new-normal/30864.
+[^7]: William Pannapacker has written eloquently on the topic in the Chronicle
+of Higher Education. See @pannapacker_pannapacker_2011
 
 [^8]: The quote is commonly attributed to Bram Cohen, the creator of
-    BitTorrent, posted on tweeter.com in 2011. There are however
-    numerous earlier instances of the exact quote, itself a variation of
-    Sturgeon's Law coined by Theodore Sturgeon (the American science
-    fiction writer) in a 1957 article for *Venture* magazine and cited
-    as such in the Oxford English Dictionary.
+BitTorrent, posted on tweeter.com in 2011. There are however numerous earlier
+instances of the exact quote, itself a variation of Sturgeon's Law coined by
+Theodore Sturgeon (the American science fiction writer) in a 1957 article for
+*Venture* magazine and cited as such in the Oxford English Dictionary.
 
-[^9]: Bird, Steven, Ewan Klein, and Edward Loper. *Natural language
-    processing with Python*. Cambridge [Mass.]: O’Reilly, 2009.
+[^9]: @bird_natural_2009
 
-[^10]: MacQueen, J. “Some Methods for Classification and Analysis of
-    Multivariate Observations.” In *Proc. Fifth Berkeley Sympos. Math.
-    Statist. and Probability* (Berkeley, Calif., 1965/66), Vol. I:
-    Statistics, pp. 281–297. Berkeley, Calif.: Univ. California Press,
-    1967. http://www.ams.org/mathscinet-getitem?mr=0214227.
+[^10]: @macqueen_methods_1967
 
-[^11]: Na, Shi, Liu Xumin, and Guan Yong. “Research on K-means
-    Clustering Algorithm: An Improved K-means Clustering Algorithm.” In
-    2*010 Third International Symposium on Intelligent Information
-    Technology and Security Informatics* (IITSI), 63 –67, 2010.
+[^11]: @na_research_2010
 
-[^12]: See for example Weber, Steven. *The Success of Open Source*.
-    Harvard University Press, 2005.
+[^12]: @weber_success_2004
 
-[^13]: A point made by Benjamin Mako Hill in his *Almost Wikipedia: What
-    eight early online collaborative encyclopedia projects reveal about
-    the mechanisms of collective action*, summarized in a recent talk at
-    the Berkman Center for Internet and Society, abstract and
-    transcripts available at
-    http://cyber.law.harvard.edu/events/luncheon/2011/10/makohill.
-    Another good summary by Garber, Megan. “The Contribution Conundrum:
-    Why Did Wikipedia Succeed While Other Encyclopedias Failed?” Nieman
-    Journalism Lab. Accessed December 22, 2012.
-    http://www.niemanlab.org/2011/10/the-contribution-conundrum-why-did-wikipedia-succeed-while-other-encyclopedias-failed/.
+[^13]: A point made by Benjamin Mako Hill in his *Almost Wikipedia: What eight
+early online collaborative encyclopedia projects reveal about the mechanisms of
+collective action*, summarized in a recent talk at the Berkman Center for
+Internet and Society, abstract and transcripts available at
+http://cyber.law.harvard.edu/events/luncheon/2011/10/makohill.  Another good
+summary by Garber, Megan. “The Contribution Conundrum: Why Did Wikipedia
+Succeed While Other Encyclopedias Failed?” Nieman Journalism Lab. Accessed
+December 22, 2012.
+http://www.niemanlab.org/2011/10/the-contribution-conundrum-why-did-wikipedia-succeed-while-other-encyclopedias-failed/.
 
 [^14]: Witness the communities aroudn arxiv.org and PLOS ONE.
 
-[^ln-dh]: I do not mean to imply that DH can be *reduced* to computation.
+[^ln-dh]: I do not mean to imply that DH can be *reduced* to computation. See
+also @ramsay_developing_2012, @elliott_new_2012.
+
+[^ln-moby]: If you are behind one of these machines now, search for your
+terminal application using Spotlight and type `man wc` in the prompt (`q` to
+exit). For mere examples see:
+https://github.com/xpmethod/dhnotes/blob/master/command-line/109-text.md
+
+[^ln-kat]: I have in mind the sort of problems Kathleen Fitzpatrick outlines in
+@fitzpatrick_planned_2011.
+
+[^ln-stat]: See @manning_foundations_1999
