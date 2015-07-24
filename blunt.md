@@ -20,8 +20,8 @@ write grant applications, send letters to the senate, draw, build, and code.
 Understood in the context of the university at large, the digital humanities
 (DH) are a part of the "computational turn" altering the course of all major
 disciplines: see computational biology, computational linguistics,
-computational social science, computational chemistry, and so on.  In general
-agreement with Geoffrey Rockwell, Stephen Ramsey, and William J.  Turkel among
+computational social science, computational chemistry, and so on. In general
+agreement with Geoffrey Rockwell, Stephen Ramsey, and William J. Turkel among
 others, I believe that programming offers new and promising avenues for the
 advancement of the humanities: tools and methods that supplement the
 traditional research activities of a historian, a literary scholar, or a
