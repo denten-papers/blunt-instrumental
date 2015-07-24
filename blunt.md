@@ -51,13 +51,13 @@ limitations.
 
 The best kind of tools are the ones that we make ourselves. After spending days
 at wrangling a particularly messy corpus, I might write a script that automates
-data wrangling. The code may function to strip extraneous HTML code, for
+data wrangling. The code may function to strip extraneous HTML markup, for
 example. I could then release it as a software library to help others who face
 the same task. With time, I may add a graphical user interface or build a web
 service. Such small acts of kindness lift all boats. They accelerate the
 research capabilities of the field as a whole. I would do nothing to discourage
-such altruistic sharing. But let us make sure that in using such tools we also
-do not forget to master them from inside out. What if my code implicitly
+analogously altruistic sharing. But let us make sure that in using tools we
+also do not forget to master them from inside out. What if my code implicitly
 mangles important metadata or worse yet, what if it alters the primary sources
 in an unexpected and tendentious ways?
 
@@ -71,8 +71,8 @@ work.[^7] Much can be learned from them, but only if we take the time to
 carefully analyze our mistakes. I present here the lessons I took from some of
 my own failed projects. Fundamentally, I have come to believe that the
 university is an unfit place to develop "big" software. We are much better
-placed to remain agile: to tinker and to experiment. I offer the following from
-an incomplete list as to the reasons why:
+placed to remain agile: to tinker and to experiment. I offer the following
+several comments from an incomplete list as to the reasons why:
 
 1. Some tools encourage intellectual laziness by obscuring methodology. More
 often, it is not the tool but rather a mode of lazy thinking at fault. For
@@ -89,7 +89,7 @@ If none of the above makes sense to you, it did not to me either, until
 recently. Getting to the reasoning behind the tool involved reading the
 framework documentation, stepping through the code, and learning about the
 algorithms involved.[^ln-stat] NLTK facilitates such discovery through
-meticulous notes, published at nltk.org.
+meticulous notes, code comments, and accompanying manuals.
 
 [^ln-stat]: found in *Foundations of Statistical Natural Language
 Processing* by Christopher D. Manning and Hinrich Schütze.
@@ -99,7 +99,7 @@ Although I was able to start experimenting with the framework in a matter of
 days, it took me months to understand the logic beneath, and I am still
 learning. The second is about documentation. NLTK is particularly good at
 revealing its methods. The code base is open to inspection. It is easy to read
-and well documented. And it contains many links to the related research.
+and well formatted. And it contains many links to the related research.
 Throughout, steps were taken to expose the encoded assumptions. Clearly,
 immense care went into the critical apparatus that surrounds the tool. And I
 suspect that at this, late stage, of the project's life cycle, more overall
@@ -115,14 +115,14 @@ responsibly requires some statistical literacy along with the ability to
 examine the implemented code. Yet higher level encapsulations of NLTK (like a
 web-based topic modeler, for example) would further remove the user from the
 logic. Each layer of abstraction introduces its own set of assumptions,
-compromises, and complexity. The resulting (hypothetical) web application may
-look easy to use. Yet, paradoxically, the ease would be gained at the expense
-of added (and hidden) complexity.
+compromises, and complications. The resulting (hypothetical) web application
+may look easy to use. Yet, paradoxically, the ease would be gained at the
+expense of added (and hidden) complexity.
 
 Hidden complexity puts the user in danger of resembling those hapless
 astronomers who receive wondrous pictures from broken telescopes. To avoid
 falling into such a trap, in the way of actual astronomers, we would have learn
-to disassemble the device, gaining access to those inner-most meaning-making
+to disassemble the device, gaining access to its inner-most meaning-making
 mechanisms. There are no other logical ways to make the tool simpler. Any
 attempt to repackage it further only adds another layer of obfuscation.
 
@@ -134,18 +134,19 @@ Tools proliferate and decline in quality relative to the researcher's
 experience. Reviewing the academic literature on k-means clustering at its
 lowest "raw" level of abstraction initially could be a tedious and
 labor-intensive affair. Not being a statistician, I cannot always follow the
-math. But, in looking at a number of articles in several related fields I am
-able to understand the uses and the limitations of the algorithm. This
-knowledge is independent of implementation. If tomorrow's researchers move from
-Python to Haskell (for example), the applied methods will transfer with the
-language. The method is what lasts, not the implementation.
+math. But, in looking at a number of articles in several related fields that
+take the same approach I am able to understand the uses and the limitations of
+the algorithm. This knowledge is independent of implementation. If tomorrow's
+researchers move from Python to Haskell (for example), the applied methods will
+transfer with the language. The method is what lasts, not the implementation.
 
-Getting to the methodological layer of the tool can be initially expensive, but
-ultimately, it makes for a more durable investment of time. Gaining fluency in
-widely-adopted languages, like R or Python, enables us to reach a wider
-audience: to share expertise, to seek and to offer support, and to share
-findings with a diverse community of practitioners. To learn some custom and
-curtailed version of those languages actually prevents conversation.
+Getting to the methodological layer of the tool can be initially time
+consuming, but ultimately, it makes for a more durable investment of time.
+Gaining fluency in widely-adopted languages, like R or Python, enables us to
+reach a wider audience: to share expertise, to seek and to offer support, and
+to share findings with a diverse community of practitioners. To learn some
+custom and curtailed version of those languages actually limits the
+possibilities of a cross-disciplinary conversation.
 
 2. Software is easy (cheap and fun) to build relative to the difficulty
 (expense and drudgery) of maintenance. "90% of coding is debugging. The other
@@ -163,17 +164,17 @@ experience. Most departments, labs, libraries, and institutes are therefore not
 well equipped to deal with the vagrancies of long-term software maintenance.
 
 In fact, if you build it, they might not come at all. Startups know that beyond
-the initial excitement of a product launch, the challenge of any new app or web
-service is acquiring and retaining users, no matter how "disruptive" or
-"innovative" the technology. A few years a go, I spent quite a bit of time
-working with a talented French developer on the next generation of a
-distributed (crowd-sourced) translation service. Despite his skills and
+the initial excitement of a product launch, the challenge of any new
+application lies in the acquisition and the retention of users, no matter how
+"disruptive" or "innovative" the technology. A few years a go, I spent quite a
+bit of time working with a talented French developer on the next generation of
+a distributed (crowd-sourced) translation service. Despite his skills and
 dedication to the project, the tool did not gain significant traction among
-translators or language students. No amount of innovative engineering or web
-design guarantees participation. Neither of us had the time nor the resources
-needed to advocate for the service. This would require training, outreach, and
-support that we could not provide to the community in addition to our
-professional obligations.
+translators or language students. No amount of innovative engineering or
+beautiful web design can guarantee participation. Neither of us had the time
+nor the resources needed to advocate for the service. This would require
+training, outreach, and support that we could not provide to the community in
+addition to our professional obligations.
 
 It is however tempting to think that social or institutional change can be
 enacted through software alone. Consider the following: every contemporary
@@ -185,33 +186,36 @@ useful for formal text analysis.
 These small utilities are free, simple to learn, versatile, and require no
 additional installation. They come with their own textbook, built into the
 terminal.[^ln-moby] Yet most of my students, even at the intermediate level,
-use their own machines at a fraction of their capacity. Many were not exposed
-to the basics of file structure or operating system essentials. This gives me
-pause, particularly when someone proposes to add complexity. What would be the
-use (again hypothetically) of yet another term frequency distribution tool when
-the existing ones languish from disuse and lack of training? Any alternative
-project duplicating the functionality of the built-in "word count" (`wc`) for
-example, would have to do better in some regard as to capability, ease of use,
-and ubiquity. And even then, it would face exactly the same challenge of
-training and adaption. Furthermore, whatever adaption it would achieve, would
-risk fracturing the already small user base. The `wc` users would strain to
-peer review papers from the other camp, until the new tool is similarly well
-understood.
+continue to compute at a fraction of their machines' native capabilities. Many
+were not exposed to the basics of file paths, networking, or operating systems.
+This gives me pause, particularly when someone proposes to add complexity. What
+would be the use (again hypothetically) of yet another term frequency
+distribution tool when the existing ones languish from disuse and lack of
+training? Any alternative project duplicating the functionality of the built-in
+"word count" utility for example, would have to do better in some regard as to
+capability, ease of use, and ubiquity of `wc`. And even then, it would face
+exactly the same challenge of training and adoption. Furthermore, whatever
+adoption the new alternative would achieve risks fracturing the already small
+user base. The users of `wc` would strain to collaborate with users of the new
+software, complicating co-authorship and peer review.
 
-By analogy, a new publishing platform that hopes to "disrupt" academic
-knowledge production, cannot autonomously solve the problems of the current
-publishing regime (of the kind Kathleen Fitzpatrick highlights in *Planned
-Obsolescence*).[ln2-kathleen] The difficulty lies in convincing our peers to
-read and to write differently. It is in the way we cite, in our program
-requirements, and in the way train faculty, students, and librarians. The tool
-comprises a small part of a much larger ecosystem. It can be a wedge that
-initiates change, but not without a much larger communal enterprise, which must
-also include training, support, and outreach.
+By analogy, in another hypothetical example, a new publishing platform that
+hopes to "disrupt" academic knowledge production, would not autonomously solve
+the problems of the current publishing regime.[^ln-kat] The difficulty lies not
+just in building a platform that can "beat" books and journals, but also in
+convincing our peers to read and to write differently. It is in the way we
+cite, in our program requirements, and in the way we train faculty, students,
+and librarians. The tool comprises but a small part of a much larger ecosystem.
+It can be a wedge that initiates change, but not without a much larger communal
+enterprise, which would also include training, support, and outreach.
 
 [^ln-moby]: If you are behind one of these machines now, search for your
 terminal application using Spotlight and type `man wc` in the prompt (`q` to
 exit). For mere examples see:
 https://github.com/xpmethod/dhnotes/blob/master/command-line/109-text.md
+
+[^ln-kat]: I have in mind the sort of problems Kathleen Fitzpatrick outlines in
+*Planned Obsolescence*.
 
 The effort to shift the habitus of a community involves a delicate balance
 between disruption and continuance. Much can be learned from the success of the
@@ -225,21 +229,20 @@ knowledge-making (the encyclopedia) and innovative editorial structures
 (commons-based peer production).[^13] I am therefore inspired by *Wikipedia*
 the community, not *MediaWiki* the tool.
 
-The emphasis on community practice leads us to standards and best practices.
-Rather than more tools, we need initiatives that promote methodological and not
-just instrumental innovation: humanities-based alternatives to associations
-like the *Society for Political Methodology and the International Association
-of Legal Methodology*; journals like *Sociological Methods & Research*,
-*Journal of Mixed Methods Research*, *International Journal of Qualitative
-Methods*; prizes and funding opportunities like the *Political Methodology
-Career Achievement and Emerging Scholars Awards*, or the *Program for Promoting
-Methodological Innovation in Humanities and Social Sciences* run by the Japan
-Society for the Promotion of Science. To sharpen our tools we must return to
-methodology: to formulate common questions, to take it more seriously in our
-training, and to give it more room in our debates and publications. Where
-possible, we should congeal our practice around a common set of tools and
-platforms that have wide adaption and that answer to the values of humanistic
-critical inquiry.
+Prioritizing community development over tools leads us to standards and best
+practices. More resources are needed to initiate methodological and not just
+instrumental innovation: humanities-based alternatives to associations like the
+*Society for Political Methodology and the International Association of Legal
+Methodology*; journals like *Sociological Methods & Research*, *Journal of
+Mixed Methods Research*, *International Journal of Qualitative Methods*; prizes
+and funding opportunities like the *Political Methodology Career Achievement
+and Emerging Scholars Awards*, or the *Program for Promoting Methodological
+Innovation in Humanities and Social Sciences* run by the Japan Society for the
+Promotion of Science. To sharpen our tools we must return to methodology: to
+formulate common questions, to take it more seriously in our training, and to
+give it more room in our debates and publications.  Where possible, we should
+congeal our practice around a common set of tools and platforms that have wide
+adoption and that answer to the values of humanistic critical inquiry.
 
 DH cannot survive alone, in isolation from similar movements in other fields.
 The concern with data processing and computation, the availability of large
@@ -250,15 +253,14 @@ is to say that finding strings within the human genome could have some
 interesting applications to mining the *Gutenberg Project* and the other way
 around. Biologists, linguists, economists, and sociologists increasingly
 integrate their methodologies, as evidenced by a vigorous cross-disciplinary
-publishing record. The computational turn sweeping all forms of knowledge is
-enabled by common toolsets, by collective methodological assumptions, and
-through shared standards of academic exposition (clarity, concision, and
-reproducibility).[^14] DH is primed to join that conversation, but only if its
-conceptual apparatus does not evolve in isolation. Working as a digital
-humanist or a new media scholar means taking on extra responsibilities: to do
-well by theory when doing theory, to be expert librarians when building
-archives, to build things that last when building things, and to do good
-science when doing science.
+publishing record. The computational turn sweeping all forms of knowledge
+formation is enabled by common toolsets, by collective methodological
+assumptions, and through shared standards of academic exposition (clarity,
+concision, and reproducibility).[^14] DH is primed to join that conversation,
+but only if its conceptual apparatus does not evolve in isolation. Working as a
+digital humanist or a new media scholar means taking on extra responsibilities:
+to do well by history when writing history, to make things that last when
+making things, and to do good science when doing science.
 
 [^1]: See: Fish, Stanley. *Save the World on Your Own Time*. Oxford
     University Press, USA, 2008.
