@@ -1,7 +1,8 @@
 ---
 title: "Blunt Instrumentalism: On Tools and Methods"
 author: Dennis Tenen
-
+style: chicago-bib.csl
+bibliography: bib.bib
 ---
 
 I am on the side of the makers. I believe that the humanities can be a place
@@ -244,8 +245,8 @@ integrate their methodologies, as evidenced by a vigorous cross-disciplinary
 publishing record. The computational turn sweeping all forms of knowledge
 formation is enabled by common toolsets, by collective methodological
 assumptions, and through shared standards of academic exposition (clarity,
-concision, and reproducibility).[^14] DH is primed to join that conversation,
-but only if its conceptual apparatus does not evolve in isolation. Working as a
+concision, and reproducibility). DH is primed to join that conversation, but
+only if its conceptual apparatus does not evolve in isolation. Working as a
 digital humanist or a new media scholar means taking on extra responsibilities:
 to do well by history when writing history, to make things that last when
 making things, and to do good science when doing science.
@@ -280,8 +281,6 @@ summary by Garber, Megan. “The Contribution Conundrum: Why Did Wikipedia
 Succeed While Other Encyclopedias Failed?” Nieman Journalism Lab. Accessed
 December 22, 2012.
 http://www.niemanlab.org/2011/10/the-contribution-conundrum-why-did-wikipedia-succeed-while-other-encyclopedias-failed/.
-
-[^14]: Witness the communities aroudn arxiv.org and PLOS ONE.
 
 [^ln-dh]: I do not mean to imply that DH can be *reduced* to computation. See
 also @ramsay_developing_2012, @elliott_new_2012.
